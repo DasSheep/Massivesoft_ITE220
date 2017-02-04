@@ -2,9 +2,7 @@
 <html>
 	<head>
 		<title>Online Shop	|	Massivesoft</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+		<?php include 'header.php';?>
 	</head>
 	<body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
 		<div class="container">
@@ -46,7 +44,7 @@ echo " 			<div class='col center-block'>
                           				<div class='input-group'>
 											<div for='Quantity' class='input-group-addon'>Quantity</div>
                              				<input name='prodAmount' value='1' type='number' class='form-control' id='Amount' placeholder='1'>
-                              				<span class='input-group-btn'><button name='prodID' value='".$i."' type='submit' class='btn btn-success' title='Add to cart'><i class='fa fa-shopping-cart' aria-hidden='true'></i></button></span>
+                              				<span class='input-group-btn'><button name='prodID' value='".$i."' type='submit' class='btn btn-success' data-toggle='tooltip' data-placement='top' title='Add to cart'><i class='fa fa-shopping-cart' aria-hidden='true'></i></button></span>
                           				</div>
                         			</div>
                     			</form>
@@ -60,3 +58,4 @@ echo "
 	<?php include 'footer.php';?>
 	</body>
 </html>
+
