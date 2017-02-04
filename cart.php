@@ -57,5 +57,6 @@
  			}
 		?>
 		<a href='javascript:history.go(-1)'><---Back</a>
+		<?php include 'footer.php';?>
 	</body>
 </html>

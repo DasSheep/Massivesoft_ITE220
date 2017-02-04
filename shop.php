@@ -16,7 +16,7 @@
 		</div>
 <?php  
 	include 'productsList.php';
-	$customerNAME = $_COOKIE['userlogin'];
+	$customerNAME = "Bob";
 	$customerCART = "0";
 echo "	<div class='container-fluid jumbotron'>
 			<div class='well well-sm'>

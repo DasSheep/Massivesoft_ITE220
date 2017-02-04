@@ -10,7 +10,7 @@
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-      <p style='text-align:middle;'>Some stuff will also go here aswell,  Check out the <strong><a href="shop.php">Shop</a></strong> page in the meantime...</p>
+      <p style='text-align:middle;'>Some more stuff will go here aswell,  Check out the <strong><a href="shop.php">Shop</a></strong> page in the meantime...</p>
     </div>
   </div>
 	<div class="container">

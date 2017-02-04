@@ -10,7 +10,7 @@
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
       </button>
-      <p style='text-align:middle;'>Some stuff will also go here aswell,  Check out the <strong><a href="shop.php">Shop</a></strong> page in the meantime...</p>
+      <p style='text-align:middle;'>Some stuff will go here,  Check out the <strong><a href="shop.php">Shop</a></strong> page in the meantime...</p>
     </div>
   </div>
 	<div class="container">
@@ -27,32 +27,45 @@
       <h1>Welcome to Massivesoft Homepage!</h1><br>
     </div>
     <div class="col-fluid">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner" role="listbox">
-    <div class="carousel-item active">
-      <img class="d-block img-fluid" style="margin: 0 auto;" src="http://placehold.it/1000x400"  alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" style="margin: 0 auto;" src="http://placehold.it/1000x400"  alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block img-fluid" style="margin: 0 auto;" src="http://placehold.it/1000x400"  alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active">
+            <img class="d-block img-fluid" style="margin: 0 auto;" src="http://placehold.it/1000x400"  alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First slide label</h3>
+              <p>Are you expecting something here?</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" style="margin: 0 auto;" src="http://placehold.it/1000x400"  alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second slide label</h3>
+              <p>There's nothing here either.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block img-fluid" style="margin: 0 auto;" src="http://placehold.it/1000x400"  alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third slide label</h3>
+              <p>Nope.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
     </div>
   </div>
   <?php include 'footer.php';?>
