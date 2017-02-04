@@ -10,9 +10,9 @@
 		<div class="container">
 			<div class="col-14"><img src="/Massivesoft/content/img/Massivesoft_logo_b.png" class="img-fluid" alt="Massivesoft_Logo"></div><br>
 			<ul class="nav nav-pills nav-fill nav-justified">
-  				<li class="nav-item"><a class="nav-link" href="index.php">Home</a>
+  				<li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
   				<li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
-  				</li><li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
+  				<li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
   				<li class="nav-item"><a class="nav-link active" href="#">Shop</a></li>
 			</ul><hr>
 		</div>
@@ -46,13 +46,13 @@ echo " 			<div class='col center-block'>
                           				<div class='input-group'>
 											<div for='Quantity' class='input-group-addon'>Quantity</div>
                              				<input name='prodAmount' value='1' type='number' class='form-control' id='Amount' placeholder='1'>
-                              				<span class='input-group-btn'><button name='prodID' value='".$i."' type='submit' class='btn btn-success' data-toggle='tooltip' data-placement='top' title='Add to cart'><i class='fa fa-shopping-cart' aria-hidden='true'></i></button></span>
+                              				<span class='input-group-btn'><button name='prodID' value='".$i."' type='submit' class='btn btn-success' title='Add to cart'><i class='fa fa-shopping-cart' aria-hidden='true'></i></button></span>
                           				</div>
                         			</div>
                     			</form>
                     		</div>
-                	</div><br>
-              	</div>";
+                		</div><br>
+              		</div>";
           			};
 echo "        
             </div>";?>
