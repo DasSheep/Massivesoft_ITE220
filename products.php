@@ -10,9 +10,9 @@
 		<div class="col-14"><img src="/Massivesoft/content/img/Massivesoft_logo_b.png" class="img-fluid" alt="Massivesoft_Logo"></div><br>
     <ul class="nav nav-pills nav-fill nav-justified">
       <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
       <li class="nav-item"><a class="nav-link active" href="#">Products</a></li>
       <li class="nav-item"><a class="nav-link" href="shop.php">Shop</a></li>
+      <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
 		</ul><hr>
     </div>
 <?php echo "  

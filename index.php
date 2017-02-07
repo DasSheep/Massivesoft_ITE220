@@ -18,9 +18,9 @@
     <div class="col">
       <ul class="nav nav-pills nav-fill nav-justified">
   			<li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
   			<li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
   			<li class="nav-item"><a class="nav-link" href="shop.php">Shop</a></li>
+        <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
 		  </ul><hr>
     </div>
     <div class="col">
