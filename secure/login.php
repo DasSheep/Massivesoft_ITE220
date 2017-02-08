@@ -49,7 +49,7 @@ if(isset($_POST['submit']))	{
 					<div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Login" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
 				</div>
 			</form>
-			<hr><br><a href='../index.php'><-- Go Back</a>
+			<hr><br><a class='btn-sm btn-info' href='../index.php' data-toggle='tooltip' data-placement='top' title='Go Back'><i class='fa fa-arrow-left' aria-hidden='true'></i></a>
 		</div>
 	</div>
 </div>

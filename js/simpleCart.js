@@ -91,7 +91,7 @@
 					currency				: "USD",
 					language				: "english-us",
 
-					cartStyle				: "div",
+					cartStyle				: "table",
 					cartColumns			: [
 						{ attr: "name", label: "Name" },
 						{ attr: "price", label: "Price", view: 'currency' },
@@ -637,7 +637,7 @@
 						xlen;
 
 					container.html(' ').append(cart_container);
-
+					cart_container.addClass('table table-bordered');
 					cart_container.append(thead_container);
 
 					thead_container.append(header_container);

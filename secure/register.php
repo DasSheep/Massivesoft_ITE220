@@ -29,7 +29,7 @@
             }
             if(!isset($error)){                                                                                         //Go ahead with account creation if no error.
                             $hashedpassword = $user->password_hash($_POST['password'], PASSWORD_BCRYPT);                //Hashing the password.
-                            $activasion = md5(uniqid(rand(),true));                                                     //Generate the activation code.
+                            $activasion = md5(uniqid(rand(),true));                                                     //Generate the activation token.
                             try {       
                                     $stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
                                     $stmt->execute(array(
@@ -80,7 +80,7 @@
                                 <div class="col-xs-6 col-md-6"><input type="submit" name="submit" value="Register" class="btn btn-primary btn-block btn-lg" tabindex="5"></div>
                             </div>
                         </form>
-                        <hr><br><a href='../index.php'><-- Go Back</a>
+                        <hr><br><a class='btn-sm btn-info' href='../index.php' data-toggle='tooltip' data-placement='top' title='Go Back'><i class='fa fa-arrow-left' aria-hidden='true'></i></a>
                     </div>
                 </div>
             </div>
