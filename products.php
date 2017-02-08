@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Products  | Massivesoft</title>
-    <?php include 'header.php';?>
+    <?php include 'include/header.php';?>
   </head>
 <body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
+<?php include 'user.php';?>
 <?php include 'productsList.php'; ?>
 	<div class="container">
 		<div class="col-14"><img src="/Massivesoft/content/img/Massivesoft_logo_b.png" class="img-fluid" alt="Massivesoft_Logo"></div><br>
@@ -39,6 +40,6 @@ echo "
         </div>";?>
       </div>
   </div>
-  <?php include 'footer.php';?>
+  <?php include 'include/footer.php';?>
 </body>
 </html>

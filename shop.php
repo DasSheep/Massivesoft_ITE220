@@ -2,9 +2,10 @@
 <html>
 	<head>
 		<title>Online Shop	|	Massivesoft</title>
-		<?php include 'header.php';?>
+		<?php include 'include/header.php';?>
 	</head>
 	<body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
+  <?php include 'user.php';?>
 		<div class="container">
 			<div class="col-14"><img src="/Massivesoft/content/img/Massivesoft_logo_b.png" class="img-fluid" alt="Massivesoft_Logo"></div><br>
 			<ul class="nav nav-pills nav-fill nav-justified">
@@ -14,14 +15,18 @@
           <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
 			</ul><hr>
 		</div>
-<?php  
+<?php
+
 	include 'productsList.php';
-	$customerNAME = "Bob";
 echo "	<div class='container-fluid jumbotron'>
 			<div class='well well-sm'>
-				<h1 style='text-align:left;float:left;'>Online Store</h1>
-				<h3 style='float:right;'>Hello ".$customerNAME." !</h3>
-				<br><br>
+				<h1 style='text-align:left;float:left;'>Online Store</h1>";
+				if( $user->is_logged_in() ){ 
+				$dispName = ucfirst($_SESSION['username']);	
+echo "			<h3 style='float:right;'>Hello ".$dispName." !</h3>";}
+				else{
+echo "			<h3 style='float:right;'>Hello Stranger !</h3>";}
+echo"			<br><br>
 				<p style='text-align:right;'><i class='fa fa-shopping-cart' aria-hidden='true'></i> item(s): <a href='cart.php'><span class='simpleCart_quantity'></p></a>
 				<a href='javascript:;'' class='simpleCart_empty'><p style='text-align:right;'>Clear Cart</p></a> 
 			</div>
@@ -42,9 +47,11 @@ echo " 			<div class='col center-block'>
                         			<div class='form-group-sm col'>
                           				<label class='sr-only'>Amount</label>
                           				<div class='input-group'>
-											<div for='Quantity' class='input-group-addon'>Quantity</div>
+                                    <div for='Quantity' class='input-group-addon'>Quantity</div>
                              				<input name='prodAmount' value='1' type='number' class='form-control item_Quantity' id='Amount' placeholder='1'>
-                              				<span class='input-group-btn'><a href='javascript:;'' class='btn btn-success item_add' data-toggle='tooltip' data-placement='top' title='Add to cart'><i class='fa fa-shopping-cart' aria-hidden='true'></i></a></span>
+                              			<span class='input-group-btn'>
+                                      <a href='javascript:;'' class='btn btn-success item_add' data-toggle='tooltip' data-placement='top' title='Add to cart'><i class='fa fa-shopping-cart' aria-hidden='true'></i></a>
+                                    </span>
                           				</div>
                         			</div>
                     			</form>
@@ -55,7 +62,7 @@ echo " 			<div class='col center-block'>
 echo "        
             </div>";?>
         </div>
-	<?php include 'footer.php';?>
+	<?php include 'include/footer.php';?>
 	</body>
 </html>
 <script type="text/javascript"> </script>

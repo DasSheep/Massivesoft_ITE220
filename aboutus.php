@@ -2,17 +2,10 @@
 <html>
   <head>
     <title>About Us  | Massivesoft</title>
-    <?php include 'header.php';?>
+    <?php include 'include/header.php';?>
   </head>
 <body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
-  <div class="col">
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-      </button>
-      <p style='text-align:middle;'>Some more stuff will go here aswell,  Check out the <strong><a href="shop.php">Shop</a></strong> page in the meantime...</p>
-    </div>
-  </div>
+<?php include 'user.php';?>
 	<div class="container">
 		<div class="col-14"><img src="/Massivesoft/content/img/Massivesoft_logo_b.png" class="img-fluid" alt="Massivesoft_Logo"></div><br>
     <ul class="nav nav-pills nav-fill nav-justified">
@@ -24,9 +17,7 @@
     <div class="col">
       <h1>About Massivesoft</h1><br>
     </div>
-   
   </div>
-
-  <?php include 'footer.php';?>
+  <?php include 'include/footer.php';?>
 </body>
 </html>
