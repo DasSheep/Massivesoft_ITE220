@@ -2,11 +2,13 @@
 <html>
   <head>
     <title>Products  | Massivesoft</title>
-    <?php include 'include/header.php';?>
+    <?php include 'include/header.php'                                                              //Created by Trin   [Products display]
+    ;?> 
   </head>
 <body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
-<?php include 'user.php';?>
-<?php include 'productsList.php'; ?>
+<?php include 'user.php';
+      include 'productsList.php';                                                                   //Include products list array. 
+?>
 	<div class="container">
 		<div class="col-14"><img src="/Massivesoft/content/img/Massivesoft_logo_b.png" class="img-fluid" alt="Massivesoft_Logo"></div><br>
     <ul class="nav nav-pills nav-fill nav-justified">
@@ -20,8 +22,8 @@
       <div class='container-fluid'>
         <h1 style='text-align:left;'>Products</h1>
         <div class='card-group'>";
-          for ($i=0 ; $i < sizeof($product); $i++) 
-                { 
+          for ($i=0 ; $i < sizeof($product); $i++)                                                  //Get loop number from product array size.                                                  
+                {                                                                                   //Display products.
 echo "    <div class='col center-block'>    
             <div class='card' style='width: 21rem;'>
               <div class='card-header'><span class='badge badge-pill badge-default'>".$product[$i][1]."</span></div>

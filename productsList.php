@@ -1,4 +1,4 @@
-<?php 
+<?php 																								//Created by Trin 	[Products list array]
 # Array format for product list as "array("0Fullprod_Name","1Software_Type","2Alt_name","3Box_Art/Link","4Details",5price);"
 
 	$product = array(

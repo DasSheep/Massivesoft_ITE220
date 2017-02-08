@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<title>Cart	|	Massivesoft</title>
-		<?php include 'include/header.php';?>
+		<?php include 'include/header.php';															//Created by Trin 	[Cart Page]
+		?>
 	</head>
 	<body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
 		<?php

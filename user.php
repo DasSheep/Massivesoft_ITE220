@@ -1,7 +1,7 @@
-<?php
-include "secure/config.php";
-if( $user->is_logged_in() ){ 
-	$dispName = ucfirst($_SESSION['username']);
+<?php 																								//Created by Trin 	[Login Handler]
+include "secure/config.php";																		
+if( $user->is_logged_in() ){ 																		//If logged in show Welcome back and logout bttn.
+	$dispName = ucfirst($_SESSION['username']);														//Get display name from capitalizing first letter of username.
 echo "		
 			<div class='page-header'>
 				<div class='input-group-sm'>
@@ -13,7 +13,7 @@ echo "
 			</div>
 
 			";
-}else{
+}else{																								//If not logged in Show login/regis bttn.
 echo "		
 			<div class='page-header'>
 				<div class='input-group-sm'>

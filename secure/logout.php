@@ -1,4 +1,4 @@
-<?php require('config.php');
+<?php require('config.php');																		//Created by Trin 	[Logout handler]
 
 //logout
 $user->logout(); 
