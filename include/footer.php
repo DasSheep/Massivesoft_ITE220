@@ -9,3 +9,4 @@ echo	"<div class='container'>
 		";
 ?>
 <script>$(document).ready(function(){$('[data-toggle="tooltip"]').tooltip();});</script> 			<!-- Tooltip Handler -->
+
