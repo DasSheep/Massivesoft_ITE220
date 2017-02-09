@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<title>Online Shop	|	Massivesoft</title>
-		<?php include 'include/header.php';															//Created by Trin 	[Shop Page]
+		<?php include 'include/header.php';															                                //Created by Trin 	[Shop Page]
 		?>
 	</head>
 	<body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
@@ -16,22 +16,22 @@
           <li class="nav-item"><a class="nav-link" href="aboutus.php">About Us</a></li>
 			</ul><hr>
 		</div>
-<?php 			include 'productsList.php';															//Include products list array.
+<?php 			include 'productsList.php';															                                //Include products list array.
 echo "	<div class='container-fluid jumbotron'>
 			<div class='well well-sm'>
 				<h1 style='text-align:left;float:left;'>Online Store</h1>";
-				if( $user->is_logged_in() ){														//If logged in.
-				$dispName = ucfirst($_SESSION['username']);											//Get username and capitalize first letter.
-echo "			<h3 style='float:right;'>Hello ".$dispName." !</h3>";}								//Display formatted username.	
-				else{																				//If not logged in.
-echo "			<h3 style='float:right;'>Howdy Stranger!</h3>";}									//Show stranger.
+				if( $user->is_logged_in() ){														                                    //If logged in.
+				$dispName = ucfirst($_SESSION['username']);											                            //Get username and capitalize first letter.
+echo "			<h3 style='float:right;'>Hello ".$dispName." !</h3>";}								                  //Display formatted username.	
+				else{																				                                                //If not logged in.
+echo "			<h3 style='float:right;'>Howdy Stranger!</h3>";}									                      //Show stranger.
 echo"			<br><br>
 				<p style='text-align:right;'><i class='fa fa-shopping-cart' aria-hidden='true'></i> item(s): <a href='cart.php'><span class='simpleCart_quantity'></p></a>
 				<a href='javascript:;'' class='simpleCart_empty'><p style='text-align:right;'>Clear Cart</p></a> 
 			</div>
 			<div class='card-group'>";
-				for ($i=0 ; $i < sizeof($product); $i++) 											//Get loop number from product array size.
-          		{ 																					//Display product.
+				for ($i=0 ; $i < sizeof($product); $i++) 											                              //Get loop number from product array size.
+          		{ 																					                                          //Display product.
 echo " 			<div class='col center-block'>    
               		<div class='card simpleCart_shelfItem' style='width: 21rem;'>
                 		<div class='card-header'><span class='badge badge-pill badge-default'>".$product[$i][1]."</span></div>

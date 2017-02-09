@@ -10,7 +10,7 @@
 			include 'productsList.php';
 echo"		<div class='container'>
 				<div class='col jumbotron'>
-				<h1><i class='fa fa-shopping-cart' aria-hidden='true'></i> Cart</h1>
+				<h1><span style='font-size:100px;'><i class='fa fa-shopping-cart' aria-hidden='true'></span></i>Cart</h1>
 				</div>
 				<div class='row'>
 					<div class='col'>
@@ -27,7 +27,7 @@ echo"		<div class='container'>
 						<a style='text-align:center;' type='button' class='btn-lg btn-warning btn-block simpleCart_empty' href='javascript:;' data-toggle='tooltip' data-placement='top' title='Clear Cart'><i class='fa fa-trash-o' aria-hidden='true'></i></a>
 					</div>
 					<div class='col'>
-						<a style='text-align:center;' type='button' class='btn-lg btn-success btn-block' href='pay.php' data-toggle='tooltip' data-placement='top' title='Pay Now'><i class='fa fa-usd' aria-hidden='true'></i></a>
+						<a style='text-align:center;' type='button' class='btn-lg btn-success btn-block' href='secure/pay.php' data-toggle='tooltip' data-placement='top' title='Pay Now'><i class='fa fa-usd' aria-hidden='true'></i></a>
 					</div>
 				</div><hr>
 			</div>

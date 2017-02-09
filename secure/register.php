@@ -32,7 +32,7 @@
                             $activasion = md5(uniqid(rand(),true));                                                     //Generate the activation token.
                             try {       
                                     $stmt = $db->prepare('INSERT INTO members (username,password,email,active) VALUES (:username, :password, :email, :active)');
-                                    $stmt->execute(array(
+                                    $stmt->execute(array(                                                               //This is where magic happens ;D
                                         ':username' => $_POST['username'],
                                         ':password' => $hashedpassword,
                                         ':email' => $_POST['email'],

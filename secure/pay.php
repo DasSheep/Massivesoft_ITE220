@@ -2,11 +2,11 @@
 <html>
 	<head>
 		<title>Pay	|	Massivesoft</title>
-		<?php include 'include/header.php';															//Created by Trin 	[Payment Page]
+		<?php include '../include/header.php';															//Created by Trin 	[Payment Page]
 		?>
 	</head>
 	<body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
-		<?php include 'productsList.php';?>
+		<?php include '../productsList.php';?>
 		<div class='container'>
 			<div class='row'>
 				<div class='col-xs jumbotron mx-auto'>
@@ -16,6 +16,6 @@
 				</div>
 			</div>
 		</div>
-		<?php include 'include/footer.php';?>
+		<?php include '../include/footer.php';?>
 	</body>
 </html>

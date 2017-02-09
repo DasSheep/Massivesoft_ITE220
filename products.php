@@ -7,6 +7,7 @@
   </head>
 <body style="background-color: #f9f9f9; font-family: 'Source Sans Pro', sans-serif;">
 <?php include 'user.php';
+      include 'include/socialtab.php';
       include 'productsList.php';                                                                   //Include products list array. 
 ?>
 	<div class="container">
