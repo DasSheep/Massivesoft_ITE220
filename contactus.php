@@ -14,7 +14,7 @@
         <ul class="nav nav-pills nav-fill nav-justified">
   				      <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="products.php">Products</a></li>
-  				      <li class="nav-item"><a class="nav-link" href="">Shop</a></li>
+  				      <li class="nav-item"><a class="nav-link" href="shop.php">Shop</a></li>
                 <li class="nav-item"><a class="nav-link active" href="aboutus.php">About Us</a></li>
         </ul><hr>
 			    <h1 class="heading--large">Help and Support</h1>
