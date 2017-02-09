@@ -23,7 +23,7 @@
       <div class="col-sm-9">
         <h1 style ="color: lightgray ; position: absolute; top: 50px; left: 30; width: 100%" >We believe in what<br>people make Possible!</h1>
         <h3 style =" color: lightgray ; position: absolute; top: 150px; left: 30; width: 100%" >Our mission is to empower every person<br>and every organization on the planet to<br>achieve more.</h3>
-        <img src="/Massivesoft/content/img/camp.jpg" width="1100" height="500" wclass="img-fluid" alt="TextBackground">
+        <img src="/Massivesoft/content/img/camp.jpg" width="1100" height="500" class="img-fluid rounded" alt="TextBackground">
       </div>
     </div><br>
     <div class="row jumbotron">
